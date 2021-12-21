@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firstproject/second_page.dart';
+
+
 class UpperPart extends StatelessWidget {
 
   @override
@@ -31,7 +33,7 @@ class UpperPart extends StatelessWidget {
                     Text(
                       'Cancel',
                       style: TextStyle(
-                        color: Colors.grey.shade600,
+                        color: Colors.grey.shade400,
                       ),
                     ),
                   ],
@@ -68,13 +70,13 @@ class UpperPart extends StatelessWidget {
               ),
               SizedBox(
               height: 15.0),
-              Text('Discover your perfect university',
+              Text('Discover your perfect air adventure',
               style: TextStyle(
                 fontSize: 14.0,
                 fontWeight: FontWeight.w500,
               ),
               ),
-              SizedBox(height: 30.0,
+              SizedBox(height: 40.0,
               ),
               Container(
                 margin: EdgeInsets.only(left: 12.0),
@@ -88,8 +90,9 @@ class UpperPart extends StatelessWidget {
                       decoration: BoxDecoration(color: Colors.white,
                       boxShadow: [BoxShadow(
                         offset: Offset(2.0, 2.0),
+                        spreadRadius: 1.0,
                         blurRadius: 5.0,
-                        color: Colors.grey
+                        color: Colors.grey.shade400
                       ),
                       ],
                   borderRadius: BorderRadius.circular(10.0)
@@ -115,8 +118,9 @@ class UpperPart extends StatelessWidget {
                       decoration: BoxDecoration(color: Colors.white,
                       boxShadow: [BoxShadow(
                         offset: Offset(2.0, 2.0),
+                        spreadRadius: 1.0,
                         blurRadius: 5.0,
-                        color: Colors.grey
+                        color: Colors.grey.shade400
                       ),
                       ],
                       borderRadius: BorderRadius.circular(10.0)
@@ -138,11 +142,69 @@ class UpperPart extends StatelessWidget {
                   ],
                 ),
               ),
-            ],
-            ),
-      ),
-      Contact(),
-      
+              SizedBox(height: 25.0),
+              Container(
+                padding: EdgeInsets.only(top: 12.0, left: 15.0),
+                width: MediaQuery.of(context).size.width-15,
+                height: 45.0,
+                decoration: BoxDecoration(
+                  border: Border.all(width: 1.2, color: Colors.grey.withOpacity(0.2)),
+                  borderRadius: BorderRadius.circular(8.0),
+                  color:Colors.white60,
+                ),
+                child: Text('Name',
+                style: TextStyle(
+                  color: Colors.grey.shade400,
+                ),
+                ),
+              ),
+              SizedBox(height: 25.0),
+              Container(
+                padding: EdgeInsets.only(top: 12.0, left: 15.0),
+                width: MediaQuery.of(context).size.width-15,
+                height: 45.0,
+                decoration: BoxDecoration(
+                  border: Border.all(width: 1.2, color: Colors.grey.withOpacity(0.2)),
+                  borderRadius: BorderRadius.circular(8.0),
+                  color:Colors.white60,
+                ),
+                child: Text('Email',
+                style: TextStyle(
+                  color: Colors.grey.shade400,
+                ),
+                ),
+              ),
+              SizedBox(height: 25.0),
+              Container(
+                    padding: EdgeInsets.only(top: 12.0, left: 15.0),
+                    width: MediaQuery.of(context).size.width-15,
+                    height: 45.0,
+                    decoration: BoxDecoration(
+                      border: Border.all(width: 1.2, color: Colors.grey.withOpacity(0.2)),
+                      borderRadius: BorderRadius.circular(8.0),
+                      color:Colors.white60,
+                    ),
+                    child: Row(
+                      children: [
+                        Text('Password',
+                        style: TextStyle(
+                        color: Colors.grey.shade400,
+                    ),
+                    ),  
+                    Expanded(child: Container(),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 4.0),
+                      child: Icon(Icons.remove_red_eye_sharp,
+                      color: Colors.grey.shade400),
+                    ),
+                      ],
+                    ),
+                  ),
+                
+            ],         
+          ),
+      ),      
       ),
     );
   }
