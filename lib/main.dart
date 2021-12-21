@@ -3,5 +3,10 @@ import 'package:firstproject/first_page.dart';
 
 
 void main() {
-  runApp(MaterialApp());
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: UpperPart(
+      
+    ),
+  ));
 }
