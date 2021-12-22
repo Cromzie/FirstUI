@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:firstproject/second_page.dart';
 
 
 class UpperPart extends StatelessWidget {
@@ -26,7 +25,7 @@ class UpperPart extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 25.0, left: 15.0),
+                margin: EdgeInsets.only(top: 30.0, left: 15.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
@@ -34,6 +33,7 @@ class UpperPart extends StatelessWidget {
                       'Cancel',
                       style: TextStyle(
                         color: Colors.grey.shade400,
+                        fontSize: 10.0,
                       ),
                     ),
                   ],
@@ -53,7 +53,6 @@ class UpperPart extends StatelessWidget {
                 child: Image(
                   image: AssetImage('images/logo.png',
                   ),
-                  // colorBlendMode: BlendMode.colorBurn,
                   width: MediaQuery.of(context).size.width,
                   height: 85.0,
                   ),
@@ -63,9 +62,8 @@ class UpperPart extends StatelessWidget {
               Text('Join us to start searching',
               style: TextStyle(
                 fontSize: 24.0,
-                // fontFamily: 'Roboto',
                 fontWeight: FontWeight.w600,
-                // fontStyle: FontStyle.normal
+                color: Colors.black87.withOpacity(0.8)
               ),
               ),
               SizedBox(
@@ -76,17 +74,16 @@ class UpperPart extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
               ),
-              SizedBox(height: 40.0,
+              SizedBox(height: 75.0,
               ),
               Container(
                 margin: EdgeInsets.only(left: 12.0),
-                
                 child: Row(
                   children: [
                     Container(
                       padding: EdgeInsets.only(left:50.0),
                       width: MediaQuery.of(context).size.width/2.2,
-                      height: 35.0,
+                      height: 40.0,
                       decoration: BoxDecoration(color: Colors.white,
                       boxShadow: [BoxShadow(
                         offset: Offset(2.0, 2.0),
@@ -114,7 +111,7 @@ class UpperPart extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.only(left:50.0),
                       width: MediaQuery.of(context).size.width/2.2,
-                      height: 35.0,
+                      height: 40.0,
                       decoration: BoxDecoration(color: Colors.white,
                       boxShadow: [BoxShadow(
                         offset: Offset(2.0, 2.0),
@@ -142,7 +139,7 @@ class UpperPart extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 25.0),
+              SizedBox(height: 35.0),
               Container(
                 padding: EdgeInsets.only(top: 12.0, left: 15.0),
                 width: MediaQuery.of(context).size.width-15,
@@ -158,7 +155,7 @@ class UpperPart extends StatelessWidget {
                 ),
                 ),
               ),
-              SizedBox(height: 25.0),
+              SizedBox(height: 15.0),
               Container(
                 padding: EdgeInsets.only(top: 12.0, left: 15.0),
                 width: MediaQuery.of(context).size.width-15,
@@ -174,7 +171,7 @@ class UpperPart extends StatelessWidget {
                 ),
                 ),
               ),
-              SizedBox(height: 25.0),
+              SizedBox(height: 15.0),
               Container(
                     padding: EdgeInsets.only(top: 12.0, left: 15.0),
                     width: MediaQuery.of(context).size.width-15,
@@ -239,6 +236,44 @@ class UpperPart extends StatelessWidget {
                     ],
                     ),
                   ),
+                  SizedBox(height: 30.0,
+                  ),
+                  Container(
+                    height: 40.0,
+                    width: MediaQuery.of(context).size.width-15,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade500.withOpacity(0.2),
+                      boxShadow: [BoxShadow(
+                        spreadRadius: 4.0,
+                        color: Colors.grey.shade100
+                      )],
+                      borderRadius: BorderRadius.circular(10.0
+                      ),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.person,
+                        color: Colors.grey.shade600.withOpacity(0.5),
+                        ),
+                        SizedBox(width: 7.0),
+                        Text('Join Us',
+                        style: TextStyle(
+                          color: Colors.grey.shade600.withOpacity(0.5),
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w500
+                        ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 70.0),
+                  Text('Have an account? Log in',
+                  style: TextStyle(
+                    color: Colors.brown[300],
+                    fontSize: 12.0,
+                    fontWeight: FontWeight.bold,
+                  ),)
             ],         
           ),
       ),      
