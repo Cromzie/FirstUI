@@ -194,14 +194,51 @@ class UpperPart extends StatelessWidget {
                     Expanded(child: Container(),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 4.0),
+                      padding: const EdgeInsets.only(right: 14.0),
                       child: Icon(Icons.remove_red_eye_sharp,
                       color: Colors.grey.shade400),
                     ),
                       ],
                     ),
                   ),
-                
+              Container(
+                    padding: EdgeInsets.only(top: 20.0),
+                    width: MediaQuery.of(context).size.width-15,
+                    // height: 45.0,
+                    child: Row(
+                      children: [  
+                    Icon(Icons.panorama_fish_eye,
+                    size: 18.8,
+                      color: Colors.grey.shade400),
+                    SizedBox(width: 10.0,),
+                    Text('I agree with the Terms of Service & Privacy Policy',
+                        style: TextStyle(
+                        color: Colors.black.withOpacity(0.7),
+                        fontSize: 12.0,
+                    ),
+                    ),  
+                    ],
+                    ),
+                  ),
+              Container(
+                    padding: EdgeInsets.only(top: 20.0),
+                    width: MediaQuery.of(context).size.width-15,
+                    // height: 45.0,
+                    child: Row(
+                      children: [  
+                    Icon(Icons.markunread_sharp,
+                    size: 18.8,
+                      color: Colors.brown[300]),
+                    SizedBox(width: 10.0,),
+                    Text('Subscribe to our Newsletter',
+                        style: TextStyle(
+                        color: Colors.black.withOpacity(0.7),
+                        fontSize: 12.0,
+                    ),
+                    ),  
+                    ],
+                    ),
+                  ),
             ],         
           ),
       ),      
